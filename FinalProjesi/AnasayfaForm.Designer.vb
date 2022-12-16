@@ -52,7 +52,7 @@ Partial Class AnasayfaForm
         Me.OyunEkrani.FlatAppearance.BorderSize = 6
         Me.OyunEkrani.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.OyunEkrani.ForeColor = System.Drawing.SystemColors.HotTrack
-        Me.OyunEkrani.Location = New System.Drawing.Point(195, 75)
+        Me.OyunEkrani.Location = New System.Drawing.Point(250, 75)
         Me.OyunEkrani.Name = "OyunEkrani"
         Me.OyunEkrani.Size = New System.Drawing.Size(117, 63)
         Me.OyunEkrani.TabIndex = 1
@@ -66,7 +66,7 @@ Partial Class AnasayfaForm
         Me.DiziEkrani.FlatAppearance.BorderSize = 6
         Me.DiziEkrani.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.DiziEkrani.ForeColor = System.Drawing.SystemColors.HotTrack
-        Me.DiziEkrani.Location = New System.Drawing.Point(653, 75)
+        Me.DiziEkrani.Location = New System.Drawing.Point(783, 75)
         Me.DiziEkrani.Name = "DiziEkrani"
         Me.DiziEkrani.Size = New System.Drawing.Size(117, 63)
         Me.DiziEkrani.TabIndex = 2
@@ -80,7 +80,7 @@ Partial Class AnasayfaForm
         Me.FilmEkrani.FlatAppearance.BorderSize = 6
         Me.FilmEkrani.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.FilmEkrani.ForeColor = System.Drawing.SystemColors.HotTrack
-        Me.FilmEkrani.Location = New System.Drawing.Point(863, 75)
+        Me.FilmEkrani.Location = New System.Drawing.Point(1063, 75)
         Me.FilmEkrani.Name = "FilmEkrani"
         Me.FilmEkrani.Size = New System.Drawing.Size(117, 63)
         Me.FilmEkrani.TabIndex = 3
@@ -94,9 +94,9 @@ Partial Class AnasayfaForm
         Me.CikisButonu.FlatAppearance.BorderSize = 6
         Me.CikisButonu.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.CikisButonu.ForeColor = System.Drawing.SystemColors.Desktop
-        Me.CikisButonu.Location = New System.Drawing.Point(424, 75)
+        Me.CikisButonu.Location = New System.Drawing.Point(511, 80)
         Me.CikisButonu.Name = "CikisButonu"
-        Me.CikisButonu.Size = New System.Drawing.Size(117, 63)
+        Me.CikisButonu.Size = New System.Drawing.Size(117, 58)
         Me.CikisButonu.TabIndex = 4
         Me.CikisButonu.Text = "Çıkış"
         Me.CikisButonu.TextAlign = System.Drawing.ContentAlignment.BottomCenter
@@ -114,7 +114,7 @@ Partial Class AnasayfaForm
         Me.PanelAnasayfa.ForeColor = System.Drawing.Color.Transparent
         Me.PanelAnasayfa.Location = New System.Drawing.Point(0, 0)
         Me.PanelAnasayfa.Name = "PanelAnasayfa"
-        Me.PanelAnasayfa.Size = New System.Drawing.Size(980, 187)
+        Me.PanelAnasayfa.Size = New System.Drawing.Size(1180, 187)
         Me.PanelAnasayfa.TabIndex = 6
         '
         'GeriDonButon
@@ -123,7 +123,7 @@ Partial Class AnasayfaForm
         Me.GeriDonButon.FlatAppearance.BorderSize = 6
         Me.GeriDonButon.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.GeriDonButon.ForeColor = System.Drawing.Color.Chocolate
-        Me.GeriDonButon.Location = New System.Drawing.Point(408, 393)
+        Me.GeriDonButon.Location = New System.Drawing.Point(507, 387)
         Me.GeriDonButon.Name = "GeriDonButon"
         Me.GeriDonButon.Size = New System.Drawing.Size(121, 78)
         Me.GeriDonButon.TabIndex = 7
@@ -135,7 +135,7 @@ Partial Class AnasayfaForm
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(223, Byte), Integer), CType(CType(234, Byte), Integer), CType(CType(246, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(980, 507)
+        Me.ClientSize = New System.Drawing.Size(1180, 507)
         Me.Controls.Add(Me.GeriDonButon)
         Me.Controls.Add(Me.PanelAnasayfa)
         Me.Font = New System.Drawing.Font("Times New Roman", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(162, Byte))

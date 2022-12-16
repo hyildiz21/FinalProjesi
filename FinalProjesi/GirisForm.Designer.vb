@@ -33,7 +33,11 @@ Partial Class GirisForm
         '
         'girisbutton
         '
+        Me.girisbutton.FlatAppearance.BorderSize = 6
+        Me.girisbutton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightGreen
+        Me.girisbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.girisbutton.Font = New System.Drawing.Font("Times New Roman", 14.25!)
+        Me.girisbutton.ForeColor = System.Drawing.Color.OliveDrab
         Me.girisbutton.Location = New System.Drawing.Point(397, 412)
         Me.girisbutton.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.girisbutton.Name = "girisbutton"
@@ -55,6 +59,7 @@ Partial Class GirisForm
         'TextBox2
         '
         Me.TextBox2.Font = New System.Drawing.Font("Times New Roman", 12.25!)
+        Me.TextBox2.ForeColor = System.Drawing.SystemColors.WindowText
         Me.TextBox2.Location = New System.Drawing.Point(434, 264)
         Me.TextBox2.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.TextBox2.Name = "TextBox2"
@@ -86,8 +91,12 @@ Partial Class GirisForm
         '
         'KayitButon
         '
-        Me.KayitButon.BackColor = System.Drawing.Color.DodgerBlue
-        Me.KayitButon.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.KayitButon.BackColor = System.Drawing.Color.Brown
+        Me.KayitButon.FlatAppearance.BorderSize = 6
+        Me.KayitButon.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Crimson
+        Me.KayitButon.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.KayitButon.Font = New System.Drawing.Font("Times New Roman", 12.25!)
+        Me.KayitButon.ForeColor = System.Drawing.Color.LightSteelBlue
         Me.KayitButon.Location = New System.Drawing.Point(374, 311)
         Me.KayitButon.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.KayitButon.Name = "KayitButon"
@@ -98,14 +107,19 @@ Partial Class GirisForm
         '
         'CikisButon
         '
+        Me.CikisButon.BackColor = System.Drawing.Color.SkyBlue
+        Me.CikisButon.FlatAppearance.BorderSize = 6
+        Me.CikisButon.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal
+        Me.CikisButon.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.CikisButon.Font = New System.Drawing.Font("Times New Roman", 14.25!)
+        Me.CikisButon.ForeColor = System.Drawing.Color.DodgerBlue
         Me.CikisButon.Location = New System.Drawing.Point(13, 12)
         Me.CikisButon.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.CikisButon.Name = "CikisButon"
-        Me.CikisButon.Size = New System.Drawing.Size(85, 29)
+        Me.CikisButon.Size = New System.Drawing.Size(97, 44)
         Me.CikisButon.TabIndex = 6
         Me.CikisButon.Text = "Çıkış"
-        Me.CikisButon.UseVisualStyleBackColor = True
+        Me.CikisButon.UseVisualStyleBackColor = False
         '
         'GirisForm
         '
