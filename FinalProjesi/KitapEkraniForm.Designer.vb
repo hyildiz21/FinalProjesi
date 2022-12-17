@@ -24,6 +24,12 @@ Partial Class KitapEkraniForm
     Private Sub InitializeComponent()
         Me.KitapEkleButon = New System.Windows.Forms.Button()
         Me.KitapEklePanel = New System.Windows.Forms.Panel()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.WriterInfo = New System.Windows.Forms.TextBox()
+        Me.DateTextBox = New System.Windows.Forms.TextBox()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.KitapEkleArea = New System.Windows.Forms.RichTextBox()
         Me.KitapListesiPanel = New System.Windows.Forms.Panel()
         Me.Sil3 = New System.Windows.Forms.Button()
@@ -35,15 +41,18 @@ Partial Class KitapEkraniForm
         Me.RadioButton3 = New System.Windows.Forms.RadioButton()
         Me.RadioButton2 = New System.Windows.Forms.RadioButton()
         Me.RadioButton1 = New System.Windows.Forms.RadioButton()
-        Me.OkuyacagimButon = New System.Windows.Forms.Button()
-        Me.OkuyorumButon = New System.Windows.Forms.Button()
-        Me.OkudumButon = New System.Windows.Forms.Button()
+        Me.IslemButon = New System.Windows.Forms.Button()
         Me.KitapListesi = New System.Windows.Forms.Label()
         Me.AnaListe = New System.Windows.Forms.ListBox()
         Me.KitapBilgiPanel = New System.Windows.Forms.Panel()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
         Me.KitapBilgiButon = New System.Windows.Forms.Button()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.KitapAdıBilgi = New System.Windows.Forms.RichTextBox()
+        Me.CikisYiliBilgi = New System.Windows.Forms.TextBox()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.YazarBilgi = New System.Windows.Forms.TextBox()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.KitapEklePanel.SuspendLayout()
         Me.KitapListesiPanel.SuspendLayout()
         Me.KitapBilgiPanel.SuspendLayout()
@@ -56,7 +65,7 @@ Partial Class KitapEkraniForm
         Me.KitapEkleButon.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.KitapEkleButon.Font = New System.Drawing.Font("Times New Roman", 9.75!)
         Me.KitapEkleButon.ForeColor = System.Drawing.Color.Indigo
-        Me.KitapEkleButon.Location = New System.Drawing.Point(54, 14)
+        Me.KitapEkleButon.Location = New System.Drawing.Point(52, 383)
         Me.KitapEkleButon.Name = "KitapEkleButon"
         Me.KitapEkleButon.Size = New System.Drawing.Size(133, 44)
         Me.KitapEkleButon.TabIndex = 8
@@ -68,6 +77,12 @@ Partial Class KitapEkraniForm
         Me.KitapEklePanel.BackColor = System.Drawing.Color.FromArgb(CType(CType(223, Byte), Integer), CType(CType(234, Byte), Integer), CType(CType(246, Byte), Integer))
         Me.KitapEklePanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.KitapEklePanel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.KitapEklePanel.Controls.Add(Me.Label5)
+        Me.KitapEklePanel.Controls.Add(Me.Label4)
+        Me.KitapEklePanel.Controls.Add(Me.Label3)
+        Me.KitapEklePanel.Controls.Add(Me.WriterInfo)
+        Me.KitapEklePanel.Controls.Add(Me.DateTextBox)
+        Me.KitapEklePanel.Controls.Add(Me.Label2)
         Me.KitapEklePanel.Controls.Add(Me.KitapEkleArea)
         Me.KitapEklePanel.Controls.Add(Me.KitapEkleButon)
         Me.KitapEklePanel.Cursor = System.Windows.Forms.Cursors.Default
@@ -77,13 +92,87 @@ Partial Class KitapEkraniForm
         Me.KitapEklePanel.Size = New System.Drawing.Size(250, 512)
         Me.KitapEklePanel.TabIndex = 9
         '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Label5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.Label5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Label5.Font = New System.Drawing.Font("Times New Roman", 10.75!)
+        Me.Label5.Location = New System.Drawing.Point(28, 59)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(66, 19)
+        Me.Label5.TabIndex = 29
+        Me.Label5.Text = "Kitap Adı"
+        Me.Label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Label4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.Label4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Label4.Font = New System.Drawing.Font("Times New Roman", 10.75!)
+        Me.Label4.Location = New System.Drawing.Point(28, 205)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(83, 19)
+        Me.Label4.TabIndex = 28
+        Me.Label4.Text = "Yazar Bilgisi"
+        Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Label3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.Label3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Label3.Font = New System.Drawing.Font("Times New Roman", 10.75!)
+        Me.Label3.Location = New System.Drawing.Point(28, 149)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(76, 19)
+        Me.Label3.TabIndex = 27
+        Me.Label3.Text = "Çıkış Tarihi"
+        Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'WriterInfo
+        '
+        Me.WriterInfo.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.WriterInfo.Font = New System.Drawing.Font("Times New Roman", 11.75!)
+        Me.WriterInfo.Location = New System.Drawing.Point(28, 227)
+        Me.WriterInfo.Name = "WriterInfo"
+        Me.WriterInfo.Size = New System.Drawing.Size(183, 26)
+        Me.WriterInfo.TabIndex = 26
+        '
+        'DateTextBox
+        '
+        Me.DateTextBox.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.DateTextBox.Font = New System.Drawing.Font("Times New Roman", 11.75!)
+        Me.DateTextBox.Location = New System.Drawing.Point(28, 171)
+        Me.DateTextBox.Name = "DateTextBox"
+        Me.DateTextBox.Size = New System.Drawing.Size(183, 26)
+        Me.DateTextBox.TabIndex = 25
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Label2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.Label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Label2.Font = New System.Drawing.Font("Times New Roman", 15.75!)
+        Me.Label2.Location = New System.Drawing.Point(61, 13)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(124, 25)
+        Me.Label2.TabIndex = 24
+        Me.Label2.Text = "Kitap Bilgisi "
+        Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
         'KitapEkleArea
         '
         Me.KitapEkleArea.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.KitapEkleArea.Font = New System.Drawing.Font("Times New Roman", 9.75!)
-        Me.KitapEkleArea.Location = New System.Drawing.Point(30, 100)
+        Me.KitapEkleArea.Font = New System.Drawing.Font("Times New Roman", 11.75!)
+        Me.KitapEkleArea.Location = New System.Drawing.Point(28, 84)
         Me.KitapEkleArea.Name = "KitapEkleArea"
-        Me.KitapEkleArea.Size = New System.Drawing.Size(183, 179)
+        Me.KitapEkleArea.Size = New System.Drawing.Size(183, 49)
         Me.KitapEkleArea.TabIndex = 9
         Me.KitapEkleArea.Text = ""
         '
@@ -100,9 +189,7 @@ Partial Class KitapEkraniForm
         Me.KitapListesiPanel.Controls.Add(Me.RadioButton3)
         Me.KitapListesiPanel.Controls.Add(Me.RadioButton2)
         Me.KitapListesiPanel.Controls.Add(Me.RadioButton1)
-        Me.KitapListesiPanel.Controls.Add(Me.OkuyacagimButon)
-        Me.KitapListesiPanel.Controls.Add(Me.OkuyorumButon)
-        Me.KitapListesiPanel.Controls.Add(Me.OkudumButon)
+        Me.KitapListesiPanel.Controls.Add(Me.IslemButon)
         Me.KitapListesiPanel.Controls.Add(Me.KitapListesi)
         Me.KitapListesiPanel.Controls.Add(Me.AnaListe)
         Me.KitapListesiPanel.Dock = System.Windows.Forms.DockStyle.Left
@@ -222,47 +309,19 @@ Partial Class KitapEkraniForm
         Me.RadioButton1.Text = "Okudum"
         Me.RadioButton1.UseVisualStyleBackColor = True
         '
-        'OkuyacagimButon
+        'IslemButon
         '
-        Me.OkuyacagimButon.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.OkuyacagimButon.FlatAppearance.BorderSize = 6
-        Me.OkuyacagimButon.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.OkuyacagimButon.Font = New System.Drawing.Font("Times New Roman", 9.75!)
-        Me.OkuyacagimButon.ForeColor = System.Drawing.Color.Indigo
-        Me.OkuyacagimButon.Location = New System.Drawing.Point(299, 235)
-        Me.OkuyacagimButon.Name = "OkuyacagimButon"
-        Me.OkuyacagimButon.Size = New System.Drawing.Size(133, 44)
-        Me.OkuyacagimButon.TabIndex = 14
-        Me.OkuyacagimButon.Text = "Okuyacağım"
-        Me.OkuyacagimButon.UseVisualStyleBackColor = False
-        '
-        'OkuyorumButon
-        '
-        Me.OkuyorumButon.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.OkuyorumButon.FlatAppearance.BorderSize = 6
-        Me.OkuyorumButon.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.OkuyorumButon.Font = New System.Drawing.Font("Times New Roman", 9.75!)
-        Me.OkuyorumButon.ForeColor = System.Drawing.Color.Indigo
-        Me.OkuyorumButon.Location = New System.Drawing.Point(149, 235)
-        Me.OkuyorumButon.Name = "OkuyorumButon"
-        Me.OkuyorumButon.Size = New System.Drawing.Size(133, 44)
-        Me.OkuyorumButon.TabIndex = 13
-        Me.OkuyorumButon.Text = "Okuyorum"
-        Me.OkuyorumButon.UseVisualStyleBackColor = False
-        '
-        'OkudumButon
-        '
-        Me.OkudumButon.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.OkudumButon.FlatAppearance.BorderSize = 6
-        Me.OkudumButon.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.OkudumButon.Font = New System.Drawing.Font("Times New Roman", 9.75!)
-        Me.OkudumButon.ForeColor = System.Drawing.Color.Indigo
-        Me.OkudumButon.Location = New System.Drawing.Point(3, 235)
-        Me.OkudumButon.Name = "OkudumButon"
-        Me.OkudumButon.Size = New System.Drawing.Size(133, 44)
-        Me.OkudumButon.TabIndex = 10
-        Me.OkudumButon.Text = "Okudum"
-        Me.OkudumButon.UseVisualStyleBackColor = False
+        Me.IslemButon.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.IslemButon.FlatAppearance.BorderSize = 6
+        Me.IslemButon.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.IslemButon.Font = New System.Drawing.Font("Times New Roman", 9.75!)
+        Me.IslemButon.ForeColor = System.Drawing.Color.Indigo
+        Me.IslemButon.Location = New System.Drawing.Point(149, 235)
+        Me.IslemButon.Name = "IslemButon"
+        Me.IslemButon.Size = New System.Drawing.Size(133, 44)
+        Me.IslemButon.TabIndex = 13
+        Me.IslemButon.Text = "İşlem Yap"
+        Me.IslemButon.UseVisualStyleBackColor = False
         '
         'KitapListesi
         '
@@ -284,7 +343,6 @@ Partial Class KitapEkraniForm
         Me.AnaListe.Font = New System.Drawing.Font("Times New Roman", 9.75!)
         Me.AnaListe.FormattingEnabled = True
         Me.AnaListe.ItemHeight = 15
-        Me.AnaListe.Items.AddRange(New Object() {"Kızıl Yükseliş"})
         Me.AnaListe.Location = New System.Drawing.Point(27, 59)
         Me.AnaListe.Name = "AnaListe"
         Me.AnaListe.Size = New System.Drawing.Size(405, 109)
@@ -294,38 +352,19 @@ Partial Class KitapEkraniForm
         '
         Me.KitapBilgiPanel.BackColor = System.Drawing.Color.FromArgb(CType(CType(223, Byte), Integer), CType(CType(234, Byte), Integer), CType(CType(246, Byte), Integer))
         Me.KitapBilgiPanel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.KitapBilgiPanel.Controls.Add(Me.Label8)
+        Me.KitapBilgiPanel.Controls.Add(Me.YazarBilgi)
+        Me.KitapBilgiPanel.Controls.Add(Me.Label7)
+        Me.KitapBilgiPanel.Controls.Add(Me.CikisYiliBilgi)
+        Me.KitapBilgiPanel.Controls.Add(Me.KitapAdıBilgi)
+        Me.KitapBilgiPanel.Controls.Add(Me.Label6)
         Me.KitapBilgiPanel.Controls.Add(Me.Label1)
-        Me.KitapBilgiPanel.Controls.Add(Me.RichTextBox1)
         Me.KitapBilgiPanel.Controls.Add(Me.KitapBilgiButon)
         Me.KitapBilgiPanel.Dock = System.Windows.Forms.DockStyle.Left
         Me.KitapBilgiPanel.Location = New System.Drawing.Point(700, 0)
         Me.KitapBilgiPanel.Name = "KitapBilgiPanel"
         Me.KitapBilgiPanel.Size = New System.Drawing.Size(485, 512)
         Me.KitapBilgiPanel.TabIndex = 11
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Label1.Font = New System.Drawing.Font("Times New Roman", 15.75!)
-        Me.Label1.Location = New System.Drawing.Point(40, 23)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(157, 25)
-        Me.Label1.TabIndex = 24
-        Me.Label1.Text = "Kitap Oku / Bilgi"
-        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'RichTextBox1
-        '
-        Me.RichTextBox1.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.RichTextBox1.Font = New System.Drawing.Font("Times New Roman", 9.75!)
-        Me.RichTextBox1.Location = New System.Drawing.Point(22, 63)
-        Me.RichTextBox1.Name = "RichTextBox1"
-        Me.RichTextBox1.Size = New System.Drawing.Size(448, 423)
-        Me.RichTextBox1.TabIndex = 10
-        Me.RichTextBox1.Text = ""
         '
         'KitapBilgiButon
         '
@@ -338,8 +377,92 @@ Partial Class KitapEkraniForm
         Me.KitapBilgiButon.Name = "KitapBilgiButon"
         Me.KitapBilgiButon.Size = New System.Drawing.Size(156, 44)
         Me.KitapBilgiButon.TabIndex = 10
-        Me.KitapBilgiButon.Text = "Kitap Oku / Kitap Bilgi"
+        Me.KitapBilgiButon.Text = "Göster :)"
         Me.KitapBilgiButon.UseVisualStyleBackColor = False
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Label6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.Label6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Label6.Font = New System.Drawing.Font("Times New Roman", 10.75!)
+        Me.Label6.Location = New System.Drawing.Point(210, 89)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(66, 19)
+        Me.Label6.TabIndex = 31
+        Me.Label6.Text = "Kitap Adı"
+        Me.Label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'KitapAdıBilgi
+        '
+        Me.KitapAdıBilgi.BackColor = System.Drawing.Color.DarkSeaGreen
+        Me.KitapAdıBilgi.Font = New System.Drawing.Font("Times New Roman", 11.75!)
+        Me.KitapAdıBilgi.Location = New System.Drawing.Point(151, 111)
+        Me.KitapAdıBilgi.Name = "KitapAdıBilgi"
+        Me.KitapAdıBilgi.Size = New System.Drawing.Size(183, 49)
+        Me.KitapAdıBilgi.TabIndex = 31
+        Me.KitapAdıBilgi.Text = ""
+        '
+        'CikisYiliBilgi
+        '
+        Me.CikisYiliBilgi.BackColor = System.Drawing.Color.DarkSeaGreen
+        Me.CikisYiliBilgi.Font = New System.Drawing.Font("Times New Roman", 11.75!)
+        Me.CikisYiliBilgi.Location = New System.Drawing.Point(151, 205)
+        Me.CikisYiliBilgi.Name = "CikisYiliBilgi"
+        Me.CikisYiliBilgi.Size = New System.Drawing.Size(183, 26)
+        Me.CikisYiliBilgi.TabIndex = 30
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Label7.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.Label7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Label7.Font = New System.Drawing.Font("Times New Roman", 10.75!)
+        Me.Label7.Location = New System.Drawing.Point(178, 178)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(122, 19)
+        Me.Label7.TabIndex = 32
+        Me.Label7.Text = "Kitabın Çıkış Tarihi"
+        Me.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'YazarBilgi
+        '
+        Me.YazarBilgi.BackColor = System.Drawing.Color.DarkSeaGreen
+        Me.YazarBilgi.Font = New System.Drawing.Font("Times New Roman", 11.75!)
+        Me.YazarBilgi.Location = New System.Drawing.Point(151, 282)
+        Me.YazarBilgi.Name = "YazarBilgi"
+        Me.YazarBilgi.Size = New System.Drawing.Size(183, 26)
+        Me.YazarBilgi.TabIndex = 30
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Label8.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.Label8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Label8.Font = New System.Drawing.Font("Times New Roman", 10.75!)
+        Me.Label8.Location = New System.Drawing.Point(203, 260)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(73, 19)
+        Me.Label8.TabIndex = 33
+        Me.Label8.Text = "Yazar İsmi"
+        Me.Label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.Label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Label1.Font = New System.Drawing.Font("Times New Roman", 12.75!)
+        Me.Label1.Location = New System.Drawing.Point(14, 26)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(262, 21)
+        Me.Label1.TabIndex = 24
+        Me.Label1.Text = "Seçilen Kitabın Bilgisini Göster --->"
+        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'KitapEkraniForm
         '
@@ -355,6 +478,7 @@ Partial Class KitapEkraniForm
         Me.Name = "KitapEkraniForm"
         Me.Text = "Kitap Ekranı"
         Me.KitapEklePanel.ResumeLayout(False)
+        Me.KitapEklePanel.PerformLayout()
         Me.KitapListesiPanel.ResumeLayout(False)
         Me.KitapListesiPanel.PerformLayout()
         Me.KitapBilgiPanel.ResumeLayout(False)
@@ -371,9 +495,7 @@ Partial Class KitapEkraniForm
     Friend WithEvents KitapEkleArea As RichTextBox
     Friend WithEvents AnaListe As ListBox
     Friend WithEvents KitapListesi As Label
-    Friend WithEvents OkuyacagimButon As Button
-    Friend WithEvents OkuyorumButon As Button
-    Friend WithEvents OkudumButon As Button
+    Friend WithEvents IslemButon As Button
     Friend WithEvents RadioButton3 As RadioButton
     Friend WithEvents RadioButton2 As RadioButton
     Friend WithEvents RadioButton1 As RadioButton
@@ -383,6 +505,17 @@ Partial Class KitapEkraniForm
     Friend WithEvents Sil3 As Button
     Friend WithEvents Sil2 As Button
     Friend WithEvents Sil1 As Button
+    Friend WithEvents Label4 As Label
+    Friend WithEvents Label3 As Label
+    Friend WithEvents WriterInfo As TextBox
+    Friend WithEvents DateTextBox As TextBox
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Label5 As Label
+    Friend WithEvents Label8 As Label
+    Friend WithEvents YazarBilgi As TextBox
+    Friend WithEvents Label7 As Label
+    Friend WithEvents CikisYiliBilgi As TextBox
+    Friend WithEvents KitapAdıBilgi As RichTextBox
+    Friend WithEvents Label6 As Label
     Friend WithEvents Label1 As Label
-    Friend WithEvents RichTextBox1 As RichTextBox
 End Class

@@ -98,6 +98,11 @@
     <Compile Include="FilmEkraniForm.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FINALPROJEDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FINALPROJEDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="GirisForm.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -160,6 +165,17 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="FINALPROJEDataSet.xsc">
+      <DependentUpon>FINALPROJEDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FINALPROJEDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FINALPROJEDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FINALPROJEDataSet.xss">
+      <DependentUpon>FINALPROJEDataSet.xsd</DependentUpon>
+    </None>
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>

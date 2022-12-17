@@ -23,6 +23,9 @@ Partial Class OyunEkraniForm
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.OyunEklePanel = New System.Windows.Forms.Panel()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.OyunEkleArea = New System.Windows.Forms.RichTextBox()
         Me.OyunEkleButon = New System.Windows.Forms.Button()
         Me.OyunListesiPanel = New System.Windows.Forms.Panel()
@@ -35,15 +38,21 @@ Partial Class OyunEkraniForm
         Me.RadioButton3 = New System.Windows.Forms.RadioButton()
         Me.RadioButton2 = New System.Windows.Forms.RadioButton()
         Me.RadioButton1 = New System.Windows.Forms.RadioButton()
-        Me.OynayacagimButon = New System.Windows.Forms.Button()
-        Me.OynuyorumButon = New System.Windows.Forms.Button()
-        Me.OynadımButon = New System.Windows.Forms.Button()
+        Me.IslemButon = New System.Windows.Forms.Button()
         Me.OyunListesi = New System.Windows.Forms.Label()
         Me.AnaListe = New System.Windows.Forms.ListBox()
         Me.OyunBilgiPanel = New System.Windows.Forms.Panel()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
         Me.OyunBilgiButon = New System.Windows.Forms.Button()
+        Me.DateTextBox = New System.Windows.Forms.TextBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.DevCompTextBox = New System.Windows.Forms.TextBox()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.OyunAdıBilgi = New System.Windows.Forms.RichTextBox()
+        Me.CikisYiliBilgi = New System.Windows.Forms.TextBox()
+        Me.DevTextBox = New System.Windows.Forms.TextBox()
         Me.OyunEklePanel.SuspendLayout()
         Me.OyunListesiPanel.SuspendLayout()
         Me.OyunBilgiPanel.SuspendLayout()
@@ -54,6 +63,12 @@ Partial Class OyunEkraniForm
         Me.OyunEklePanel.BackColor = System.Drawing.Color.FromArgb(CType(CType(223, Byte), Integer), CType(CType(234, Byte), Integer), CType(CType(246, Byte), Integer))
         Me.OyunEklePanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.OyunEklePanel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.OyunEklePanel.Controls.Add(Me.DevCompTextBox)
+        Me.OyunEklePanel.Controls.Add(Me.Label3)
+        Me.OyunEklePanel.Controls.Add(Me.DateTextBox)
+        Me.OyunEklePanel.Controls.Add(Me.Label2)
+        Me.OyunEklePanel.Controls.Add(Me.Label5)
+        Me.OyunEklePanel.Controls.Add(Me.Label1)
         Me.OyunEklePanel.Controls.Add(Me.OyunEkleArea)
         Me.OyunEklePanel.Controls.Add(Me.OyunEkleButon)
         Me.OyunEklePanel.Cursor = System.Windows.Forms.Cursors.Default
@@ -63,13 +78,55 @@ Partial Class OyunEkraniForm
         Me.OyunEklePanel.Size = New System.Drawing.Size(250, 516)
         Me.OyunEklePanel.TabIndex = 10
         '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Label2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.Label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Label2.Font = New System.Drawing.Font("Times New Roman", 10.75!)
+        Me.Label2.Location = New System.Drawing.Point(30, 169)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(76, 19)
+        Me.Label2.TabIndex = 31
+        Me.Label2.Text = "Çıkış Tarihi"
+        Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Label5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.Label5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Label5.Font = New System.Drawing.Font("Times New Roman", 10.75!)
+        Me.Label5.Location = New System.Drawing.Point(30, 78)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(66, 19)
+        Me.Label5.TabIndex = 30
+        Me.Label5.Text = "Oyun Adı"
+        Me.Label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.Label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Label1.Font = New System.Drawing.Font("Times New Roman", 15.75!)
+        Me.Label1.Location = New System.Drawing.Point(30, 22)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(118, 25)
+        Me.Label1.TabIndex = 24
+        Me.Label1.Text = "Oyun Bilgisi"
+        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
         'OyunEkleArea
         '
         Me.OyunEkleArea.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.OyunEkleArea.Font = New System.Drawing.Font("Times New Roman", 9.75!)
+        Me.OyunEkleArea.Font = New System.Drawing.Font("Times New Roman", 11.75!)
         Me.OyunEkleArea.Location = New System.Drawing.Point(30, 100)
         Me.OyunEkleArea.Name = "OyunEkleArea"
-        Me.OyunEkleArea.Size = New System.Drawing.Size(183, 179)
+        Me.OyunEkleArea.Size = New System.Drawing.Size(183, 49)
         Me.OyunEkleArea.TabIndex = 9
         Me.OyunEkleArea.Text = ""
         '
@@ -80,7 +137,7 @@ Partial Class OyunEkraniForm
         Me.OyunEkleButon.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.OyunEkleButon.Font = New System.Drawing.Font("Times New Roman", 9.75!)
         Me.OyunEkleButon.ForeColor = System.Drawing.Color.Indigo
-        Me.OyunEkleButon.Location = New System.Drawing.Point(54, 14)
+        Me.OyunEkleButon.Location = New System.Drawing.Point(49, 312)
         Me.OyunEkleButon.Name = "OyunEkleButon"
         Me.OyunEkleButon.Size = New System.Drawing.Size(133, 44)
         Me.OyunEkleButon.TabIndex = 8
@@ -100,9 +157,7 @@ Partial Class OyunEkraniForm
         Me.OyunListesiPanel.Controls.Add(Me.RadioButton3)
         Me.OyunListesiPanel.Controls.Add(Me.RadioButton2)
         Me.OyunListesiPanel.Controls.Add(Me.RadioButton1)
-        Me.OyunListesiPanel.Controls.Add(Me.OynayacagimButon)
-        Me.OyunListesiPanel.Controls.Add(Me.OynuyorumButon)
-        Me.OyunListesiPanel.Controls.Add(Me.OynadımButon)
+        Me.OyunListesiPanel.Controls.Add(Me.IslemButon)
         Me.OyunListesiPanel.Controls.Add(Me.OyunListesi)
         Me.OyunListesiPanel.Controls.Add(Me.AnaListe)
         Me.OyunListesiPanel.Dock = System.Windows.Forms.DockStyle.Left
@@ -222,47 +277,19 @@ Partial Class OyunEkraniForm
         Me.RadioButton1.Text = "Oynadım"
         Me.RadioButton1.UseVisualStyleBackColor = True
         '
-        'OynayacagimButon
+        'IslemButon
         '
-        Me.OynayacagimButon.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.OynayacagimButon.FlatAppearance.BorderSize = 6
-        Me.OynayacagimButon.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.OynayacagimButon.Font = New System.Drawing.Font("Times New Roman", 9.75!)
-        Me.OynayacagimButon.ForeColor = System.Drawing.Color.Indigo
-        Me.OynayacagimButon.Location = New System.Drawing.Point(299, 235)
-        Me.OynayacagimButon.Name = "OynayacagimButon"
-        Me.OynayacagimButon.Size = New System.Drawing.Size(133, 44)
-        Me.OynayacagimButon.TabIndex = 14
-        Me.OynayacagimButon.Text = "Oynayacağım"
-        Me.OynayacagimButon.UseVisualStyleBackColor = False
-        '
-        'OynuyorumButon
-        '
-        Me.OynuyorumButon.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.OynuyorumButon.FlatAppearance.BorderSize = 6
-        Me.OynuyorumButon.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.OynuyorumButon.Font = New System.Drawing.Font("Times New Roman", 9.75!)
-        Me.OynuyorumButon.ForeColor = System.Drawing.Color.Indigo
-        Me.OynuyorumButon.Location = New System.Drawing.Point(149, 235)
-        Me.OynuyorumButon.Name = "OynuyorumButon"
-        Me.OynuyorumButon.Size = New System.Drawing.Size(133, 44)
-        Me.OynuyorumButon.TabIndex = 13
-        Me.OynuyorumButon.Text = "Oynuyorum"
-        Me.OynuyorumButon.UseVisualStyleBackColor = False
-        '
-        'OynadımButon
-        '
-        Me.OynadımButon.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.OynadımButon.FlatAppearance.BorderSize = 6
-        Me.OynadımButon.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.OynadımButon.Font = New System.Drawing.Font("Times New Roman", 9.75!)
-        Me.OynadımButon.ForeColor = System.Drawing.Color.Indigo
-        Me.OynadımButon.Location = New System.Drawing.Point(3, 235)
-        Me.OynadımButon.Name = "OynadımButon"
-        Me.OynadımButon.Size = New System.Drawing.Size(133, 44)
-        Me.OynadımButon.TabIndex = 10
-        Me.OynadımButon.Text = "Oynadım"
-        Me.OynadımButon.UseVisualStyleBackColor = False
+        Me.IslemButon.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.IslemButon.FlatAppearance.BorderSize = 6
+        Me.IslemButon.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.IslemButon.Font = New System.Drawing.Font("Times New Roman", 9.75!)
+        Me.IslemButon.ForeColor = System.Drawing.Color.Indigo
+        Me.IslemButon.Location = New System.Drawing.Point(149, 235)
+        Me.IslemButon.Name = "IslemButon"
+        Me.IslemButon.Size = New System.Drawing.Size(133, 44)
+        Me.IslemButon.TabIndex = 13
+        Me.IslemButon.Text = "İşlem Yap"
+        Me.IslemButon.UseVisualStyleBackColor = False
         '
         'OyunListesi
         '
@@ -293,38 +320,19 @@ Partial Class OyunEkraniForm
         '
         Me.OyunBilgiPanel.BackColor = System.Drawing.Color.FromArgb(CType(CType(223, Byte), Integer), CType(CType(234, Byte), Integer), CType(CType(246, Byte), Integer))
         Me.OyunBilgiPanel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.OyunBilgiPanel.Controls.Add(Me.Label1)
-        Me.OyunBilgiPanel.Controls.Add(Me.RichTextBox1)
+        Me.OyunBilgiPanel.Controls.Add(Me.DevTextBox)
+        Me.OyunBilgiPanel.Controls.Add(Me.CikisYiliBilgi)
+        Me.OyunBilgiPanel.Controls.Add(Me.OyunAdıBilgi)
+        Me.OyunBilgiPanel.Controls.Add(Me.Label8)
+        Me.OyunBilgiPanel.Controls.Add(Me.Label7)
+        Me.OyunBilgiPanel.Controls.Add(Me.Label6)
+        Me.OyunBilgiPanel.Controls.Add(Me.Label4)
         Me.OyunBilgiPanel.Controls.Add(Me.OyunBilgiButon)
         Me.OyunBilgiPanel.Dock = System.Windows.Forms.DockStyle.Left
         Me.OyunBilgiPanel.Location = New System.Drawing.Point(700, 0)
         Me.OyunBilgiPanel.Name = "OyunBilgiPanel"
         Me.OyunBilgiPanel.Size = New System.Drawing.Size(504, 516)
         Me.OyunBilgiPanel.TabIndex = 12
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Label1.Font = New System.Drawing.Font("Times New Roman", 15.75!)
-        Me.Label1.Location = New System.Drawing.Point(40, 23)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(104, 25)
-        Me.Label1.TabIndex = 24
-        Me.Label1.Text = "Oyun Bilgi"
-        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'RichTextBox1
-        '
-        Me.RichTextBox1.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.RichTextBox1.Font = New System.Drawing.Font("Times New Roman", 9.75!)
-        Me.RichTextBox1.Location = New System.Drawing.Point(22, 63)
-        Me.RichTextBox1.Name = "RichTextBox1"
-        Me.RichTextBox1.Size = New System.Drawing.Size(448, 423)
-        Me.RichTextBox1.TabIndex = 10
-        Me.RichTextBox1.Text = ""
         '
         'OyunBilgiButon
         '
@@ -333,12 +341,128 @@ Partial Class OyunEkraniForm
         Me.OyunBilgiButon.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.OyunBilgiButon.Font = New System.Drawing.Font("Times New Roman", 9.75!)
         Me.OyunBilgiButon.ForeColor = System.Drawing.Color.Indigo
-        Me.OyunBilgiButon.Location = New System.Drawing.Point(298, 13)
+        Me.OyunBilgiButon.Location = New System.Drawing.Point(302, 22)
         Me.OyunBilgiButon.Name = "OyunBilgiButon"
         Me.OyunBilgiButon.Size = New System.Drawing.Size(156, 44)
         Me.OyunBilgiButon.TabIndex = 10
-        Me.OyunBilgiButon.Text = "Oyun Bilgi"
+        Me.OyunBilgiButon.Text = "Göster :))"
         Me.OyunBilgiButon.UseVisualStyleBackColor = False
+        '
+        'DateTextBox
+        '
+        Me.DateTextBox.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.DateTextBox.Font = New System.Drawing.Font("Times New Roman", 11.75!)
+        Me.DateTextBox.Location = New System.Drawing.Point(30, 191)
+        Me.DateTextBox.Name = "DateTextBox"
+        Me.DateTextBox.Size = New System.Drawing.Size(183, 26)
+        Me.DateTextBox.TabIndex = 32
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Label3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.Label3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Label3.Font = New System.Drawing.Font("Times New Roman", 10.75!)
+        Me.Label3.Location = New System.Drawing.Point(30, 235)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(102, 19)
+        Me.Label3.TabIndex = 33
+        Me.Label3.Text = "Geliştirici Firma"
+        Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'DevCompTextBox
+        '
+        Me.DevCompTextBox.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.DevCompTextBox.Font = New System.Drawing.Font("Times New Roman", 11.75!)
+        Me.DevCompTextBox.Location = New System.Drawing.Point(30, 257)
+        Me.DevCompTextBox.Name = "DevCompTextBox"
+        Me.DevCompTextBox.Size = New System.Drawing.Size(183, 26)
+        Me.DevCompTextBox.TabIndex = 34
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Label4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.Label4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Label4.Font = New System.Drawing.Font("Times New Roman", 12.75!)
+        Me.Label4.Location = New System.Drawing.Point(17, 36)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(264, 21)
+        Me.Label4.TabIndex = 25
+        Me.Label4.Text = "Seçilen Oyunun Bilgisini Göster --->"
+        Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Label6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.Label6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Label6.Font = New System.Drawing.Font("Times New Roman", 10.75!)
+        Me.Label6.Location = New System.Drawing.Point(215, 105)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(66, 19)
+        Me.Label6.TabIndex = 35
+        Me.Label6.Text = "Oyun Adı"
+        Me.Label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Label7.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.Label7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Label7.Font = New System.Drawing.Font("Times New Roman", 10.75!)
+        Me.Label7.Location = New System.Drawing.Point(189, 192)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(126, 19)
+        Me.Label7.TabIndex = 35
+        Me.Label7.Text = "Oyunun Çıkış Tarihi"
+        Me.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Label8.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.Label8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Label8.Font = New System.Drawing.Font("Times New Roman", 10.75!)
+        Me.Label8.Location = New System.Drawing.Point(170, 257)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(161, 19)
+        Me.Label8.TabIndex = 35
+        Me.Label8.Text = "Oyunun Geliştirici Firması"
+        Me.Label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'OyunAdıBilgi
+        '
+        Me.OyunAdıBilgi.BackColor = System.Drawing.Color.DarkSeaGreen
+        Me.OyunAdıBilgi.Font = New System.Drawing.Font("Times New Roman", 11.75!)
+        Me.OyunAdıBilgi.Location = New System.Drawing.Point(160, 127)
+        Me.OyunAdıBilgi.Name = "OyunAdıBilgi"
+        Me.OyunAdıBilgi.Size = New System.Drawing.Size(183, 49)
+        Me.OyunAdıBilgi.TabIndex = 35
+        Me.OyunAdıBilgi.Text = ""
+        '
+        'CikisYiliBilgi
+        '
+        Me.CikisYiliBilgi.BackColor = System.Drawing.Color.DarkSeaGreen
+        Me.CikisYiliBilgi.Font = New System.Drawing.Font("Times New Roman", 11.75!)
+        Me.CikisYiliBilgi.Location = New System.Drawing.Point(160, 214)
+        Me.CikisYiliBilgi.Name = "CikisYiliBilgi"
+        Me.CikisYiliBilgi.Size = New System.Drawing.Size(183, 26)
+        Me.CikisYiliBilgi.TabIndex = 36
+        '
+        'DevTextBox
+        '
+        Me.DevTextBox.BackColor = System.Drawing.Color.DarkSeaGreen
+        Me.DevTextBox.Font = New System.Drawing.Font("Times New Roman", 11.75!)
+        Me.DevTextBox.Location = New System.Drawing.Point(160, 285)
+        Me.DevTextBox.Name = "DevTextBox"
+        Me.DevTextBox.Size = New System.Drawing.Size(183, 26)
+        Me.DevTextBox.TabIndex = 37
         '
         'OyunEkraniForm
         '
@@ -353,6 +477,7 @@ Partial Class OyunEkraniForm
         Me.Name = "OyunEkraniForm"
         Me.Text = "Oyun Ekranı"
         Me.OyunEklePanel.ResumeLayout(False)
+        Me.OyunEklePanel.PerformLayout()
         Me.OyunListesiPanel.ResumeLayout(False)
         Me.OyunListesiPanel.PerformLayout()
         Me.OyunBilgiPanel.ResumeLayout(False)
@@ -374,13 +499,22 @@ Partial Class OyunEkraniForm
     Friend WithEvents RadioButton3 As RadioButton
     Friend WithEvents RadioButton2 As RadioButton
     Friend WithEvents RadioButton1 As RadioButton
-    Friend WithEvents OynayacagimButon As Button
-    Friend WithEvents OynuyorumButon As Button
-    Friend WithEvents OynadımButon As Button
+    Friend WithEvents IslemButon As Button
     Friend WithEvents OyunListesi As Label
     Friend WithEvents AnaListe As ListBox
     Friend WithEvents OyunBilgiPanel As Panel
     Friend WithEvents Label1 As Label
-    Friend WithEvents RichTextBox1 As RichTextBox
     Friend WithEvents OyunBilgiButon As Button
+    Friend WithEvents Label5 As Label
+    Friend WithEvents Label2 As Label
+    Friend WithEvents DateTextBox As TextBox
+    Friend WithEvents Label3 As Label
+    Friend WithEvents DevCompTextBox As TextBox
+    Friend WithEvents Label4 As Label
+    Friend WithEvents Label8 As Label
+    Friend WithEvents Label7 As Label
+    Friend WithEvents Label6 As Label
+    Friend WithEvents OyunAdıBilgi As RichTextBox
+    Friend WithEvents DevTextBox As TextBox
+    Friend WithEvents CikisYiliBilgi As TextBox
 End Class

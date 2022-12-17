@@ -38,7 +38,7 @@ Partial Class AnasayfaForm
         Me.KitapEkrani.FlatAppearance.BorderSize = 6
         Me.KitapEkrani.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.KitapEkrani.ForeColor = System.Drawing.SystemColors.HotTrack
-        Me.KitapEkrani.Location = New System.Drawing.Point(0, 75)
+        Me.KitapEkrani.Location = New System.Drawing.Point(12, 75)
         Me.KitapEkrani.Name = "KitapEkrani"
         Me.KitapEkrani.Size = New System.Drawing.Size(117, 63)
         Me.KitapEkrani.TabIndex = 0
@@ -80,7 +80,7 @@ Partial Class AnasayfaForm
         Me.FilmEkrani.FlatAppearance.BorderSize = 6
         Me.FilmEkrani.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.FilmEkrani.ForeColor = System.Drawing.SystemColors.HotTrack
-        Me.FilmEkrani.Location = New System.Drawing.Point(1063, 75)
+        Me.FilmEkrani.Location = New System.Drawing.Point(1051, 75)
         Me.FilmEkrani.Name = "FilmEkrani"
         Me.FilmEkrani.Size = New System.Drawing.Size(117, 63)
         Me.FilmEkrani.TabIndex = 3
